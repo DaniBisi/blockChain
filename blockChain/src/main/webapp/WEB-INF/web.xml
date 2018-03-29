@@ -1,0 +1,39 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>HelloworldServlet</servlet-name>
+  	<display-name>HelloworldServlet</display-name>
+  	<description></description>
+  	<servlet-class>magenta.blockChainTest.HelloworldServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BlockChainServlet</servlet-name>
+  	<display-name>BlockChainServlet</display-name>
+  	<description></description>
+  	<servlet-class>magenta.blockChain.BlockChainServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ProvaServlet</servlet-name>
+  	<display-name>ProvaServlet</display-name>
+  	<description></description>
+  	<servlet-class>magenta.blockChain.ProvaServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>HelloworldServlet</servlet-name>
+  	<url-pattern>/HelloworldServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ProvaServlet</servlet-name>
+  	<url-pattern>/ProvaServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>BlockChainServlet</servlet-name>
+  	<url-pattern>/BlockChainServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

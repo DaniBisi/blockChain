@@ -69,7 +69,6 @@ class SessionWrapper{
 				logger.info(proposalResponse.getPeer().getName()+ " Risposta " + payload);
 			}
 		}
-		
 		channel.sendTransaction(queryProposals); //finalizza la transazione mandando le proposte all'order.
 		CompletableFuture<BlockEvent.TransactionEvent> txFuture =
 				channel.sendTransaction(queryProposals, client.getUserContext());
@@ -109,7 +108,7 @@ class SessionWrapper{
 	}
 	
 	public String userRegister(String username, String org) {
-		String userSecret=""; 
+		String userSecret=null; 
 		try {
 			RegistrationRequest rr = new RegistrationRequest(username,org);
 			Attribute a1 = new Attribute("mspid", "Org1MSP");

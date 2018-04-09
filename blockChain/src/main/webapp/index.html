@@ -1,4 +1,4 @@
-<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
+<!-- <%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@page import="java.util.LinkedList"%>
 <%@ page import="magenta.blockChain.Car"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -51,5 +51,18 @@
 				
 			</div>
 		</div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Hello Page</title>
+<link rel="stylesheet" th:href="@{/css/main.css}"
+href="../../css/main.css" />
+</head>
+<body>
+<p><span th:text="'Hello ' + ${message}"></span></p>
 </body>
 </html>
